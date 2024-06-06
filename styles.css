@@ -116,7 +116,7 @@ header .main-nav ul li a.current {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     text-align: left;
     overflow: hidden;
 }
