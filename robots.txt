@@ -1,4 +1,4 @@
-robots.txt
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
+Sitemap: www.zerobuzzbrew.jonathanwalther.dk/sitemap.xml
