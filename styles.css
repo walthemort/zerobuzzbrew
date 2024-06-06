@@ -107,7 +107,7 @@ header .main-nav ul li a.current {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 0; /* No gap between grid items */
+    gap: 0; /* ingen gap mellem grid */
     margin-bottom: 2rem;
 }
 
@@ -218,7 +218,7 @@ footer h2 {
     color: #FFFFFF;
 }
 
-/* Mobile menu toggle button */
+/* Mobile menu knap */
 #nav-toggle, #inner-nav-toggle {
     display: none;
     background-color: #F9A00D;
@@ -233,7 +233,7 @@ footer h2 {
     height: 30px;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 1001; /* Ensuring the button is above other elements */
+    z-index: 1001; /* Sikre at mobilmenu er foran alt andet så den altid kan ses */
 }
 
 #nav-toggle span, #inner-nav-toggle span {
