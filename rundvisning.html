@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rundvisningsside</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo" aria-label="Hjem">
+            <img src="/images/logo-wide.png" alt="Firmanavn logo">
+        </a>
+        <button id="nav-toggle" aria-label="Åbn navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="nav-menu" role="navigation" aria-label="Hovednavigation">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="rundvisning.html" class="current">Rundvisning</a></li>
+                <li><a href="bryg-din-egen-ol.html">Skab Din Egen Øl</a></li>
+                <li><a href="vores-ol.html">Vores Øl</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <img src="images\rundvisningfro.jpg" alt="Billede af rundvisningen">
+            <h1>BOOK EN RUNDVISNING PÅ BRYGGERIET</h1>
+            <p>Kom tættere på bryggeriets kunst med vores spændende rundvisning. Lær om hele processen bag vores alkoholfri øl, fra råvare til færdig produkt. Efter rundvisningen får du mulighed for at prøve kræfter som brygmester og brygge din egen unikke alkoholfri øl. Det perfekte arrangement til teambuilding, polterabender eller bare en sjov dag med vennerne.</p>
+        </section>
+        <section class="booking-section" id="booking">
+            <header>
+                <h2>Bookingkalender</h2>
+            </header>
+            <p>Vælg en dato nedenfor for at booke en rundvisning.</p>
+            <h3>Tilgængelige datoer</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Tid</th>
+                        <th>Pladser</th>
+                        <th>Handling</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>21. maj</td>
+                        <td>10:00</td>
+                        <td>10</td>
+                        <td><button class="day" data-date="5. juni" data-time="10:00">Vælg</button></td>
+                    </tr>
+                    <tr>
+                        <td>21. maj</td>
+                        <td>14:00</td>
+                        <td>10</td>
+                        <td><button class="day" data-date="5. juni" data-time="11:00">Vælg</button></td>
+                    </tr>
+                    <!-- Flere statiske rækker -->
+                </tbody>
+            </table>
+        </section>
+        <div id="booking-popup" class="popup" aria-hidden="true">
+            <div class="popup-content">
+                <span id="close-popup" class="close" aria-label="Luk">&times;</span>
+                <h2>Fuldfør din booking</h2>
+                <form id="booking-form">
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <button type="submit">Book</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <h2>Kontakt os</h2>
+            <p>Adresse: Ølvej 42, 1234 Brygby</p>
+            <p>Email: info@zerobuzzbrew.dk</p>
+            <p>Telefon: 12 34 56 78</p>
+        </section>
+
+        <section>
+            <h2>Åbningstider</h2>
+            <p>Mandag - Fredag: 10:00 - 18:00</p>
+            <p>Lørdag: 12:00 - 16:00</p>
+            <p>Søndag: Lukket</p>
+        </section>
+        <nav aria-label="Sitemap">
+            <ul>
+                <li><a href="#hjem">Hjem</a></li>
+                <li><a href="#om-os">Om os</a></li>
+                <li><a href="#rundvisning">Rundvisning</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

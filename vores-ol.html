@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vores Øl</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo" aria-label="Hjem">
+            <img src="images/logo-wide.png" alt="Firmanavn logo">
+        </a>
+        <button id="nav-toggle" aria-label="Åbn navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="nav-menu" role="navigation" aria-label="Hovednavigation">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="rundvisning.html">Rundvisning</a></li>
+                <li><a href="bryg-din-egen-ol.html">Skab Din Egen Øl</a></li>
+                <li><a href="vores-ol.html" class="current">Vores Øl</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-container">
+            <header class="shop-header">
+                <h2>Vores Øl</h2>
+                <p>Bestil dine favoritøl direkte fra vores bryggeri.</p>
+            </header>
+            <ul class="shop-grid">
+                <!-- Eksempel på et produkt -->
+                <li class="shop-item">
+                    <img src="images/beer1.png" alt="Øl 1">
+                    <h3>Lys Lager (330 ml)</h3>
+                    <p>Balanceret bitterhed og en ikke overvældende, humlearoma.</p>
+                    <p>Pris: 50 DKK</p>
+                    <form>
+                        <label for="quantity1">Antal:</label>
+                        <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                        <button type="button" class="button">Læg i kurv</button>
+                    </form>
+                </li>
+                <li class="shop-item">
+                    <img src="images/beer2.png" alt="Øl 2">
+                    <h3>Mørk Ale (330 ml)</h3>
+                    <p>Mørk karamel og noter af mørk chokolade, nødder og malt.</p>
+                    <p>Pris: 55 DKK</p>
+                    <form>
+                        <label for="quantity2">Antal:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                        <button type="button" class="button">Læg i kurv</button>
+                    </form>
+                </li>
+                <li class="shop-item">
+                    <img src="images/beer3.png" alt="Øl 3">
+                    <h3>Frugt IPA (330 ml)</h3>
+                    <p>Frugtig med noter af citrus.</p>
+                    <p>Pris: 55 DKK</p>
+                    <form>
+                        <label for="quantity2">Antal:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                        <button type="button" class="button">Læg i kurv</button>
+                    </form>
+                </li>
+                <li class="shop-item">
+                    <img src="images/beer4.png" alt="Øl 4">
+                    <h3>Sæsonbestemt Special (330 ml)</h3>
+                    <p>Smag på årstiden med vores særlige udvalg – altid alkoholfri, altid enestående.</p>
+                    <p>Pris: 55 DKK</p>
+                    <form>
+                        <label for="quantity2">Antal:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                        <button type="button" class="button">Læg i kurv</button>
+                    </form>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Kontakt os</h2>
+            <p>Adresse: Ølvej 42, 1234 Brygby</p>
+            <p>Email: info@zerobuzzbrew.dk</p>
+            <p>Telefon: 12 34 56 78</p>
+        </section>
+
+        <section>
+            <h2>Åbningstider</h2>
+            <p>Mandag - Fredag: 10:00 - 18:00</p>
+            <p>Lørdag: 12:00 - 16:00</p>
+            <p>Søndag: Lukket</p>
+        </section>
+        <nav aria-label="Sitemap">
+            <ul>
+                <li><a href="#hjem">Hjem</a></li>
+                <li><a href="#om-os">Om os</a></li>
+                <li><a href="#rundvisning">Rundvisning</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

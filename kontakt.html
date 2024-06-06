@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="logo" aria-label="Hjem">
+            <img src="images/logo-wide.png" alt="Firmanavn logo">
+        </a>
+        <button id="nav-toggle" aria-label="Åbn navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="nav-menu" role="navigation" aria-label="Hovednavigation">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="rundvisning.html">Rundvisning</a></li>
+                <li><a href="bryg-din-egen-ol.html">Skab Din Egen Øl</a></li>
+                <li><a href="vores-ol.html">Vores Øl</a></li>
+                <li><a href="kontakt.html" class="current">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <header class="contact-header">
+                <h2>Kontakt os</h2>
+                <p>Vi vil meget gerne høre fra dig! Brug venligst formularen nedenfor til at sende os en besked.</p>
+            </header>
+            <form class="contact-form" action="submit_contact_form" method="POST">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Besked:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="button">Send Besked</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Kontakt os</h2>
+            <p>Adresse: Ølvej 42, 1234 Brygby</p>
+            <p>Email: info@zerobuzzbrew.dk</p>
+            <p>Telefon: 12 34 56 78</p>
+        </section>
+
+        <section>
+            <h2>Åbningstider</h2>
+            <p>Mandag - Fredag: 10:00 - 18:00</p>
+            <p>Lørdag: 12:00 - 16:00</p>
+            <p>Søndag: Lukket</p>
+        </section>
+        <nav aria-label="Sitemap">
+            <ul>
+                <li><a href="#hjem">Hjem</a></li>
+                <li><a href="#om-os">Om os</a></li>
+                <li><a href="#rundvisning">Rundvisning</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
